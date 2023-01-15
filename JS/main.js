@@ -165,7 +165,8 @@ function CV(){
     let button = document.getElementById("btn-cv")
 
     button.addEventListener('mousedown', function (){
-        DownloadFile("test.pdf");
+        downloadFile2("test.pdf", "test.pdf")
+        // DownloadFile("test.pdf");
     })
 }
 
@@ -198,8 +199,21 @@ function DownloadFile(fileName) {
         }
     };
     req.send();
-};
+}
 
+function downloadFile2(url, fileName) {
+    fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
+        .then(res => res.blob())
+        .then(res => {
+            const aElement = document.createElement('a');
+            aElement.setAttribute('download', fileName);
+            const href = URL.createObjectURL(res);
+            aElement.href = href;
+            aElement.setAttribute('target', '_blank');
+            aElement.click();
+            URL.revokeObjectURL(href);
+        });
+};
 
 document.addEventListener('DOMContentLoaded', function () {
     addMenu();
@@ -210,6 +224,7 @@ document.addEventListener('DOMContentLoaded', function () {
     desac_education()
     education();
     CV();
+
 
 
 })
