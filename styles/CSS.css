@@ -1,0 +1,445 @@
+#container{
+    margin: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    /*min-height: 720px;*/
+}
+
+
+
+/************************* Menu ****************************/
+#menu{
+    background-color: gray;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /*max-height: 750px;*/
+    /*overflow-y: scroll;*/
+    /*overflow-x: hidden;*/
+}
+
+#photo-profile img{
+    height :150px;
+    border-radius: 70px;
+}
+#photo-profile{
+    margin-top: 30%;
+    text-align: center;
+}
+
+#name-menu{
+    margin-top: 10%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#profession{
+    margin-top: 10%;
+    text-align: center;
+}
+
+#menu-list{
+    margin-top: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#foot{
+    margin-top: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#logo-re{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Styles pour les écrans de moins de 600px de large */
+@media (max-width: 950px) {
+    /* Règles CSS */
+
+    #photo-profile img{
+        height :110px;
+        border-radius: 70px;
+    }
+}
+/**************** description *********************/
+#description{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    margin-left: 15px;
+    /*max-height: 750px;*/
+    /*overflow-y: scroll;*/
+    /*overflow-x: hidden;*/
+}
+
+/****************** Home *************************/
+#ID_Home{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+#pres{
+    position: absolute;
+    z-index: 2;
+    left: 2%;
+    margin-top: 35%;
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+}
+#photo-home img{
+    max-width: 100%;
+    /*display: none;*/
+}
+#photo-home{
+    top: 0;
+}
+
+#description-home{
+    font-size: 20px;
+    margin-top: 15px;
+}
+#description-home,
+#name-home{
+
+    max-width: 270px;
+}
+
+
+#btn-cv{
+    margin-top: 15px;
+    width: 140px;
+    height: 30px;
+    background-color: unset;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-cv:hover{
+    background-color: gray;
+}
+
+/***************** about **************************/
+#ID_About{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+#entete-about{
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#presentation-about{
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#boite-about{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.boite{
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 25% 75%;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    box-shadow:  0 0 2em white;
+    background-color: white;
+    border-bottom: solid red;
+}
+.xx{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-box{
+    width: 100px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#projet-about{
+    margin-top: 10%;
+    height: 150px;
+    position: relative;
+    background-color: gold;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+#text-projet-about{
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+
+}
+
+#btn-hire{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    width: 140px;
+    height: 30px;
+    background-color: unset;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn-hire:hover{
+    background-color: gray;
+}
+
+/********************************* Skills *********************/
+#ID_Skills{
+    margin-top: 10%;
+    height: 250px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+#Skills-Titre{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+#Skills-Description{
+    margin-top: 5%;
+}
+#Skills-Competences{
+    margin-top: 5%;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#skill-info{
+
+}
+.stat-skill{
+    height: 15px;
+    width: 100%;
+    background-color: gray;
+}
+.container-skills{
+    width: 100%;
+    background-color: gray;
+}
+
+.stat-skill{
+    text-align: right;
+    color: white;
+    margin-bottom: 10px;
+}
+/********************** Education ***************************/
+#ID_Educations{
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#education{
+    font-size: 35px;
+    font-weight: bold;
+}
+.section-education{
+    height: 35px;
+    margin-top: 2%;
+    cursor: pointer;
+    background-color: gray;
+    position: relative;
+
+}
+
+.section-education-active{
+    height: 35px;
+    margin-top: 2%;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+
+
+}
+
+.t-educ{
+    position: absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    left: 4%;
+}
+
+.signe-educ{
+    position: absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    right: 2%;
+}
+.educ-description{
+    margin-top: 2%;
+    /*border: solid 1px;*/
+    box-shadow:  0 0 2em white;
+    background-color: white;
+}
+
+.desactive{
+    display: none;
+}
+
+/****************************8 Contact ***********************/
+
+#ID_Contacts{
+    margin-top: 10%;
+    height: 250px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#titre_contact{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+#contact-Infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#contact-p{
+    margin-top: 2%;
+    width: 250px;
+
+}
+#contact-form{
+    margin-top: 2%;
+    width: 450px;
+    max-height: 500px;
+}
+
+.contact-p-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 2%;
+    margin-top: 10%;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'nom prenom'
+        'mail mail'
+        'sub sub'
+        'mess mess'
+        'send send';
+}
+#nom{
+    grid-area: nom ;
+}
+#Prenom{
+    grid-area: prenom ;
+}
+#mail{
+    grid-area: mail ;
+}
+#subject{
+    grid-area: sub ;
+}
+#message{
+    grid-area: mess ;
+    resize: none;
+}
+#btn-form{
+    grid-area: send;
+    background-color: unset;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-form:hover{
+    background-color: gray;
+}
+input,
+textarea,
+#btn-form,
+#message{
+    margin: 5px;
+    height: 45px;
+    border-radius: 5px;
+}
+@media (max-width: 950px) {
+    /* Règles CSS */
+
+    #contact-Infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 900px) {
+    /* Règles CSS */
+
+
+    form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        'nom'
+        'prenom'
+        'mail'
+        'sub'
+        'mess'
+        'send';
+    }
+
+    #contact-form{
+        margin-top: 2%;
+        width: 400px;
+        max-height: 500px;
+    }
+}
+
+
