@@ -29,16 +29,18 @@ function addMenu(){
 
 
     for(let sec of sections ) {
+        if (sec.id !== "footer"){
+            let new_nodeTag_a = document.createElement('a')
+            new_nodeTag_a.innerHTML = "<br>" + sec.id;
+            // console.log(sec.id)
 
-        let new_nodeTag_a = document.createElement('a')
-        new_nodeTag_a.innerHTML = "<br>" + sec.id;
-        // console.log(sec.id)
+            new_nodeTag_a.href = "#ID_"+sec.id
+            Menu_list.append(new_nodeTag_a)
 
-        new_nodeTag_a.href = "#ID_"+sec.id
-        Menu_list.append(new_nodeTag_a)
+            let lienIdText = "ID_"+sec.id
+            sec.setAttribute('id', lienIdText)
+        }
 
-        let lienIdText = "ID_"+sec.id
-        sec.setAttribute('id', lienIdText)
 
     }
 
@@ -161,12 +163,14 @@ function  education(){
 }
 
 function CV(){
-    let button = document.getElementById("btn-cv")
+    let button = document.querySelectorAll(".btn-cv")
+    for(let ele of button){
+        ele.addEventListener('mousedown', function (){
+            downloadFile2("test.pdf", "test.pdf")
+            // DownloadFile("test.pdf");
+        })
+    }
 
-    button.addEventListener('mousedown', function (){
-        downloadFile2("test.pdf", "test.pdf")
-        // DownloadFile("test.pdf");
-    })
 }
 
 
