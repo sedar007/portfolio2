@@ -1,0 +1,370 @@
+#container{
+    width: 75%;
+    margin: 10px auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    min-height: 720px;
+}
+
+/************************* Menu ****************************/
+#menu{
+    background-color: gray;
+    position: relative;
+    display: grid;
+    grid-template-rows: 20% 10% 10% 40% 5%;
+    max-height: 750px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+#photo-profile img{
+    height :150px;
+    border-radius: 70px;
+}
+#photo-profile{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#name-menu{
+    position: absolute;
+    margin-top: 80%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#profession{
+    position: absolute;
+    margin-top: 100%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#menu-list{
+    position: absolute;
+    margin-top: 130%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#copyright{
+    position: absolute;
+    bottom: 1px;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+/**************** description *********************/
+#description{
+    position: relative;
+    background-color: whitesmoke;
+    max-height: 750px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+/****************** Home *************************/
+
+#photo-home img{
+    max-width: 844px;
+}
+#photo-home{
+    position: absolute;
+}
+#pres{
+    position: absolute;
+    z-index: 2;
+    top: 270px;
+    left: 20px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#description-home{
+    font-size: 20px;
+    margin-top: 15px;
+}
+#description-home,
+#name-home{
+
+    max-width: 270px;
+}
+
+#btn-cv{
+    margin-top: 15px;
+    width: 140px;
+    height: 30px;
+    background-color: unset;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-cv:hover{
+    background-color: gray;
+}
+
+/***************** about **************************/
+
+#entete-about{
+    position: absolute;
+    top: 80%;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+#presentation-about{
+    position: absolute;
+    top: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+#boite-about{
+    position: relative;
+    margin-top: 95%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    display: flex;
+    justify-content: space-around;
+    /*background-color: blue;*/
+}
+
+.boite{
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 25% 75%;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    box-shadow:  0 0 2em white;
+    background-color: white;
+    border-bottom: solid red;
+}
+
+.xx{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.text-box{
+    width: 100px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#projet-about{
+    margin-top: 50px;
+    height: 150px;
+    position: relative;
+    background-color: gold;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+#text-projet-about{
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+
+}
+
+#btn-hire{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    width: 140px;
+    height: 30px;
+    background-color: unset;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-hire:hover{
+    background-color: gray;
+}
+/*#projet-about,*/
+/*.boite,*/
+/*#Skills-container{*/
+/*    margin-top: 50px;*/
+/*    margin-left: 30px;*/
+/*    margin-right: 30px;*/
+
+/*}*/
+
+/********************************* Skills *********************/
+#Skills-container{
+    position :relative;
+    margin-top: 50px;
+    height: 250px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#Skills-Titre{
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    top: 5%;
+
+
+
+}
+#Skills-Description{
+    position: absolute;
+    top: 30%;
+
+
+}
+#Skills-Competences{
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    right: 5%;
+}
+#Skills-Competences{
+    position: absolute;
+    top: 65%;
+    display: flex;
+    justify-content: space-around;
+    /*flex-direction: row | row-reverse | column | column-reverse;*/
+}
+#skill-info{
+
+}
+.stat-skill{
+    height: 15px;
+    width: 100%;
+    background-color: gray;
+}
+
+
+.container-skills{
+    width: 100%;
+    background-color: gray;
+}
+
+.stat-skill{
+    text-align: right;
+    color: white;
+    margin-bottom: 10px;
+
+}
+/********************** Education ***************************/
+#container_Educations{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#education{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.section-education{
+    height: 35px;
+    position: relative;
+    margin-top: 2%;
+    cursor: pointer;
+    background-color: gray;
+
+
+}
+.section-education-active{
+    height: 35px;
+    position: relative;
+    margin-top: 2%;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+
+
+
+}
+.t-educ{
+    position: absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    left: 4%;
+}
+
+.signe-educ{
+    position: absolute;
+    top : 50%;
+    transform: translateY(-50%);
+    right: 2%;
+}
+
+.educ-description{
+    position: relative;
+    margin-top: 2%;
+    /*border: solid 1px;*/
+    box-shadow:  0 0 2em white;
+    background-color: white;
+}
+
+.desactive{
+    display: none;
+}
+
+/****************************8 Contact ***********************/
+
+#contact-container{
+    position: relative;
+    margin-top: 30%;
+    height: 250px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: red;
+    display: grid;
+
+
+}
+#contact-p{
+    left: 2px;
+    /*margin-right:50% ;*/
+    /*height: 150px;*/
+    background-color: green;
+    /*transform: translateX(-50%);*/
+}
+#contact-form{
+    /*height: 150px;*/
+    background-color: blue;
+    right: 2px;
+}
+
