@@ -5,7 +5,10 @@
 
 }
 
-
+/*.element{*/
+/*    height: 100vh; !* For 100% screen height *!*/
+/*    width:  100vw; !* For 100% screen width *!*/
+/*}*/
 
 /************************* Menu ****************************/
 #menu{
@@ -13,6 +16,7 @@
     position: fixed;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 
 }
 
@@ -46,7 +50,7 @@
 
 
 #foot{
-    margin-top: 20%;
+    margin-top: 60%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -84,9 +88,10 @@ a:hover{
     flex-direction: column;
     background-color: whitesmoke;
     margin-left: 250px;
+    height: 100vh;
     /*max-height: 750px;*/
-    /*overflow-y: scroll;*/
-    /*overflow-x: hidden;*/
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 /****************** Home *************************/
