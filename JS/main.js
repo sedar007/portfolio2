@@ -25,9 +25,8 @@ function addMenu(){
     addPhotoProfile();
     let sections = document.getElementById("description")
     sections = sections.children;
-    // console.log(sections[0].id)
     let Menu_list = document.getElementById("menu-list")
-    // console.log(sections)
+
 
     for(let sec of sections ) {
 
