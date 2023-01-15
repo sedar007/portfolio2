@@ -4,6 +4,14 @@
     flex-direction: row;
 
 }
+@media (max-width: 950px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;*/
+
+    }
+}
 
 
 /************************* Menu ****************************/
@@ -62,12 +70,64 @@ a:hover{
 
 /* Styles pour les écrans de moins de 600px de large */
 @media (max-width: 950px) {
-    /* Règles CSS */
+    #menu{
+        width: 200px;
+    }
 
     #photo-profile img{
         height :110px;
         border-radius: 70px;
     }
+
+}
+
+@media (max-width: 950px) {
+    #menu{
+        background-color: gray;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 17vh;
+        width: 90vw;
+        /*margin: auto;*/
+
+    }
+
+
+    #photo-profile img{
+        height :70px;
+        border-radius: 70px;
+    }
+    #photo-profile{
+        margin-top: 1%;
+        left: 15px;
+        /*text-align: center;*/
+    }
+
+    #name-menu{
+        margin-top: 10%;
+        margin-left: -30%;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    #profession{
+        margin-top: 15%;
+        /*margin-left: -40%;*/
+        text-align: center;
+        display: none;
+    }
+
+    #menu-list{
+        /*margin-top: 20%;*/
+        /*text-align: center;*/
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*flex-direction: column;*/
+    }
+
+
 }
 /**************** description *********************/
 #description{
@@ -98,7 +158,7 @@ a:hover{
 }
 #photo-home img{
     max-width: 100%;
-    /*display: none;*/
+    display: none;
 }
 #photo-home{
     margin-left: 5%;
@@ -130,6 +190,69 @@ a:hover{
     background-color: gray;
 }
 
+@media (max-width: 1233px) {
+    #photo-home img{
+        max-width: 95%;
+    }
+
+    #btn-cv{
+        margin-top: 5px;
+        width: 140px;
+        height: 30px;
+    }
+
+    #pres{
+        position: absolute;
+        z-index: 2;
+        left: 7%;
+        margin-top: 20%;
+        font-size: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 1170px) {
+
+    #pres{
+        position: absolute;
+        z-index: 2;
+        left: 7%;
+        margin-top: 17%;
+        font-size: 55px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1050px) {
+
+
+    #pres{
+        position: absolute;
+        z-index: 2;
+        left: 7%;
+        margin-top: 10%;
+        font-size: 55px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 950px) {
+
+
+    #pres{
+        position: absolute;
+        z-index: 2;
+        left: 7%;
+        margin-top: 5%;
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 /***************** about **************************/
 #ID_About{
     margin-top: 10%;
@@ -148,6 +271,7 @@ a:hover{
     margin-top: 1%;
     margin-left: 5%;
     margin-right: 5%;
+    text-align: justify;
 }
 #boite-about{
     margin-top: 2%;
@@ -230,6 +354,7 @@ a:hover{
 
 #Skills-Description{
     margin-top: 5%;
+    text-align: justify;
 }
 #Skills-Competences{
     margin-top: 5%;
@@ -409,7 +534,7 @@ textarea,
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
     /* Règles CSS */
 
 
@@ -431,6 +556,55 @@ textarea,
         width: 400px;
         max-height: 500px;
     }
+}
+@media (max-width: 1000px) {
+    #contact-Infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contact-p{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /*margin-top: 2%;*/
+        width: 650px;
+
+    }
+    .contact-p-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 950px) {
+    #contact-Infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contact-p{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /*margin-top: 2%;*/
+        width: 620px;
+
+    }
+    .contact-p-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #contact-form{
+
+        margin-left: 10%;
+        width: 450px;
+        max-height: 500px;
+    }
+
+
 }
 #footer{
     margin-top: 10%;
