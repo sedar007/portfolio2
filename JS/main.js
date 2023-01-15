@@ -16,7 +16,7 @@ emoji.push("&#128512;","&#128512;", "&#128512;","&#128512;","&#128512;");
 function addPhotoProfile(){
     let el = document.getElementById("photo-profile");
     let img = document.createElement('img');
-    img.setAttribute('src',"../photos/profile.jpg");
+    img.setAttribute('src',"photos/profile.jpg");
     img.setAttribute('alt',"Photo profile");
     el.append(img);
 }
@@ -46,8 +46,8 @@ function addMenu(){
 }
 
 function createHomeSection(){
-    imagesHome.push("../photos/home1.jpg");
-    imagesHome.push("../photos/home2.jpg");
+    imagesHome.push("photos/home1.jpg");
+    imagesHome.push("photos/home2.jpg");
 
     let home_section = document.getElementById("photo-home")
     let img = document.createElement('img');
