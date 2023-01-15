@@ -9,7 +9,7 @@ NAME_SKILLS.push("jquery", "html","SQL","C++", "JavaScript")
 
 let competences = [];
 let emoji = [];
-competences.push("Graphic Design","Web Design","C++","CSS", "SSas")
+competences.push("Web Design","Web developper","Programmer")
 emoji.push("&#128512;","&#128512;", "&#128512;","&#128512;","&#128512;");
 
 
