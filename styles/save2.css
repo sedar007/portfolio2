@@ -1,8 +1,9 @@
 #container{
     margin: auto;
-    display: flex;
-    flex-direction: row;
-
+    position: relative;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    /*min-height: 720px;*/
 }
 
 
@@ -10,10 +11,12 @@
 /************************* Menu ****************************/
 #menu{
     background-color: gray;
-    position: fixed;
+    position: relative;
     display: flex;
     flex-direction: column;
-
+    /*max-height: 750px;*/
+    /*overflow-y: scroll;*/
+    /*overflow-x: hidden;*/
 }
 
 #photo-profile img{
@@ -83,7 +86,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
-    margin-left: 250px;
+    margin-left: 15px;
     /*max-height: 750px;*/
     /*overflow-y: scroll;*/
     /*overflow-x: hidden;*/
@@ -98,8 +101,8 @@ a:hover{
 #pres{
     position: absolute;
     z-index: 2;
-    left: 7%;
-    margin-top: 25%;
+    left: 2%;
+    margin-top: 35%;
     font-size: 60px;
     display: flex;
     flex-direction: column;
@@ -109,9 +112,7 @@ a:hover{
     /*display: none;*/
 }
 #photo-home{
-    margin-left: 5%;
-    margin-right: 5%;
-
+    top: 0;
 }
 
 #description-home{
