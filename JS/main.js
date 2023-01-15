@@ -9,7 +9,7 @@ NAME_SKILLS.push("jquery", "html","SQL","C++", "JavaScript")
 
 let competences = [];
 let emoji = [];
-competences.push("Graphic Design","Web Design","C++","CSS", "SSas")
+competences.push("Web Design","Web developper","Programmer")
 emoji.push("&#128512;","&#128512;", "&#128512;","&#128512;","&#128512;");
 
 
@@ -25,9 +25,8 @@ function addMenu(){
     addPhotoProfile();
     let sections = document.getElementById("description")
     sections = sections.children;
-    // console.log(sections[0].id)
     let Menu_list = document.getElementById("menu-list")
-    // console.log(sections)
+
 
     for(let sec of sections ) {
 
@@ -161,6 +160,60 @@ function  education(){
     }
 }
 
+function CV(){
+    let button = document.getElementById("btn-cv")
+
+    button.addEventListener('mousedown', function (){
+        downloadFile2("test.pdf", "test.pdf")
+        // DownloadFile("test.pdf");
+    })
+}
+
+
+function DownloadFile(fileName) {
+    //Set the File URL.
+    var url = fileName;
+
+    //Create XMLHTTP Request.
+    var req = new XMLHttpRequest();
+    req.open("GET", url, true);
+    req.responseType = "blob";
+    req.onload = function () {
+        //Convert the Byte Data to BLOB object.
+        var blob = new Blob([req.response], { type: "application/octetstream" });
+
+        //Check the Browser type and download the File.
+        var isIE = false || !!document.documentMode;
+        if (isIE) {
+            window.navigator.msSaveBlob(blob, fileName);
+        } else {
+            var url = window.URL || window.webkitURL;
+            link = url.createObjectURL(blob);
+            var a = document.createElement("a");
+            a.setAttribute("download", fileName);
+            a.setAttribute("href", link);
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+        }
+    };
+    req.send();
+}
+
+function downloadFile2(url, fileName) {
+    fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
+        .then(res => res.blob())
+        .then(res => {
+            const aElement = document.createElement('a');
+            aElement.setAttribute('download', fileName);
+            const href = URL.createObjectURL(res);
+            aElement.href = href;
+            aElement.setAttribute('target', '_blank');
+            aElement.click();
+            URL.revokeObjectURL(href);
+        });
+};
+
 document.addEventListener('DOMContentLoaded', function () {
     addMenu();
     ImagesHome()
@@ -169,6 +222,8 @@ document.addEventListener('DOMContentLoaded', function () {
     hireme()
     desac_education()
     education();
+    CV();
+
 
 
 })
