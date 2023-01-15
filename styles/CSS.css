@@ -5,10 +5,6 @@
 
 }
 
-/*.element{*/
-/*    height: 100vh; !* For 100% screen height *!*/
-/*    width:  100vw; !* For 100% screen width *!*/
-/*}*/
 
 /************************* Menu ****************************/
 #menu{
@@ -17,6 +13,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    width: 250px;
 
 }
 
@@ -49,17 +46,7 @@
 }
 
 
-#foot{
-    margin-top: 60%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-#logo-re{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+
 
 a:link{
     color: black;
@@ -330,7 +317,7 @@ a:hover{
 
 #ID_Contacts{
     margin-top: 10%;
-    height: 250px;
+    /*height: 250px;*/
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
@@ -445,5 +432,21 @@ textarea,
         max-height: 500px;
     }
 }
+#footer{
+    margin-top: 10%;
+    /*text-align: center;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#logo-re{
+    display: flex;
+    margin-top: 10%;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
-
+#copyright{
+    text-align: center;
+    margin-top: 10px;
+}
