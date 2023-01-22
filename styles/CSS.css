@@ -16,7 +16,7 @@
 
 /************************* Menu ****************************/
 #menu{
-    background-color: whitesmoke;
+    background-color: dodgerblue;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,6 @@
 
 
 
-
 a:link{
     color: black;
     text-decoration: none;
@@ -64,7 +63,7 @@ a:visited {
     color: black;
 }
 a:hover{
-    color: blue;
+    color: white;
     text-decoration: underline;
 }
 
@@ -113,6 +112,7 @@ a:hover{
         transform: translate(-50%, -50%);
         text-align: center;
         font-weight: bold;
+
         /*background-color: gold;*/
     }
 
@@ -164,11 +164,13 @@ a:hover{
 #pres{
     position: absolute;
     z-index: 2;
-    left: 7%;
+    left: 10%;
     margin-top: 25%;
     font-size: 60px;
     display: flex;
     flex-direction: column;
+    color: white;
+
 }
 #photo-home img{
     max-width: 100%;
@@ -186,24 +188,24 @@ a:hover{
 }
 #description-home,
 #name-home{
-
+    color: white;
     max-width: 270px;
 }
-#cv_2{
-    display: none;
-}
+/*#cv_2{*/
+/*    display: none;*/
+/*}*/
 
 .btn-cv{
     margin-top: 15px;
     width: 140px;
-    height: 30px;
+    height: 40px;
     background-color: unset;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .btn-cv:hover{
-    background-color: gray;
+    background-color: dodgerblue;
 }
 
 @media (max-width: 1233px) {
@@ -392,7 +394,7 @@ a:hover{
     margin-top: 10%;
     height: 150px;
     position: relative;
-    background-color: gold;
+    background-color: dodgerblue;
     margin-left: 5%;
     margin-right: 5%;
 
@@ -417,13 +419,57 @@ a:hover{
     cursor: pointer;
 }
 #btn-hire:hover{
-    background-color: gray;
+    background-color: dodgerblue;
 }
 
 /********************************* Skills *********************/
+
+
+#Skills-Competences{
+    margin-top: 5%;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.sk{
+    font-size: 20px;
+}
+
+
+#Skills-Competences .name {
+    display: flex;
+}
+
+.bar{
+    margin: auto;
+}
+
+
+#Skills-Competences .name .sk {
+    margin: 15px;
+}
+
+.bar{
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: red;
+}
+
+.bar .progress{
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+
 #ID_Skills{
     margin-top: 10%;
-    height: 250px;
+
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
@@ -439,6 +485,7 @@ a:hover{
     margin-top: 5%;
     text-align: justify;
 }
+/*
 #Skills-Competences{
     margin-top: 5%;
     left: 5%;
@@ -446,7 +493,7 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+}*/
 #skill-info{
 
 }
@@ -482,7 +529,7 @@ a:hover{
     height: 35px;
     margin-top: 2%;
     cursor: pointer;
-    background-color: gray;
+    background-color: dodgerblue;
     position: relative;
 
 }
@@ -491,7 +538,7 @@ a:hover{
     height: 35px;
     margin-top: 2%;
     cursor: pointer;
-    background-color: blue;
+    background-color: gray;
     color: white;
 
 
@@ -524,7 +571,7 @@ a:hover{
 /****************************8 Contact ***********************/
 
 #ID_Contacts{
-    margin-top: 10%;
+    margin-top: 5%;
     /*height: 250px;*/
     margin-left: 5%;
     margin-right: 5%;
@@ -707,3 +754,4 @@ textarea,
     text-align: center;
     margin-top: 10px;
 }
+

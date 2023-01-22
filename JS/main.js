@@ -47,8 +47,10 @@ function addMenu(){
 }
 
 function createHomeSection(){
-    imagesHome.push("photos/home1.jpg");
-    imagesHome.push("photos/home2.jpg");
+    // imagesHome.push("photos/home1.jpg");
+    // imagesHome.push("photos/home2.jpg");
+    imagesHome.push("photos/photo_banner.jpg");
+
 
     let home_section = document.getElementById("photo-home")
     let img = document.createElement('img');
@@ -91,35 +93,62 @@ function CreateBoxAbout(){
     })
 }
 
-function createSkill(){
+// function createSkill(){
+//
+//     let elements = document.getElementById("Skills-Competences")
+//     NAME_SKILLS.forEach((element, index) => {
+//         let skill_info = document.createElement('div');
+//         skill_info.classList.add('skill-info');
+//
+//         let skill_name = document.createElement('div');
+//         skill_name.innerHTML = element;
+//         skill_name.classList.add("name-skill")
+//
+//         let skill_container = document.createElement('div');
+//         skill_container.classList.add("container-skills");
+//
+//         let stat_skill = document.createElement('div');
+//         stat_skill.classList.add("stat-skill");
+//         stat_skill.innerHTML = STAT_SKILLS[index];
+//
+//         stat_skill.style = "background-color: #04AA6D;" + "width: " + STAT_SKILLS[index] +";";
+//
+//         skill_container.append(stat_skill)
+//         skill_info.append(skill_name)
+//         skill_info.append(skill_container)
+//         elements.append(skill_info)
+//     })
+// }
 
+function createSkill() {
     let elements = document.getElementById("Skills-Competences")
     NAME_SKILLS.forEach((element, index) => {
-        let skill_info = document.createElement('div');
-        skill_info.classList.add('skill-info');
+        let name = document.createElement('div');
+        let sk = document.createElement('div');
+        let bar = document.createElement('div');
+        let progress = document.createElement('div');
 
-        let skill_name = document.createElement('div');
-        skill_name.innerHTML = element;
-        skill_name.classList.add("name-skill")
+        name.classList.add('name')
+        sk.classList.add('sk');
+        sk.innerHTML = element;
+        bar.classList.add('bar');
+        progress.classList.add('progress')
+        progress.style = "background-color: dodgerblue;" + "width: " + STAT_SKILLS[index] +";";
 
-        let skill_container = document.createElement('div');
-        skill_container.classList.add("container-skills");
-
-        let stat_skill = document.createElement('div');
-        stat_skill.classList.add("stat-skill");
-        stat_skill.innerHTML = STAT_SKILLS[index];
-
-        stat_skill.style = "background-color: #04AA6D;" + "width: " + STAT_SKILLS[index] +";";
-
-        skill_container.append(stat_skill)
-        skill_info.append(skill_name)
-        skill_info.append(skill_container)
-        elements.append(skill_info)
+        name.append(sk);
+        bar.append(progress);
+        sk.append(bar);
+        elements.append(name)
     })
 
 
-
 }
+// <div className="name">
+//     <div className="sk">Html</div>
+//     <div className="bar">
+//         <div className="progress"></div>
+//     </div>
+// </div>
 
 function hireme(){
     let bouton = document.getElementById('btn-hire')
@@ -131,21 +160,21 @@ function hireme(){
 
 function desac_education(){
     let elements = document.querySelectorAll('.educ-description')
-    for(let elem of elements)
-        elem.classList.add("desactive")
+    // for(let elem of elements)
+        // elem.classList.add("desactive")
 }
 
 function  education(){
-    let elements = document.querySelectorAll('.section-education');
+    let elements = document.querySelectorAll('.section-education'); // recupere les section-education
 
     for(let elem of elements){
-        elem.addEventListener('mousedown', function (){
+        elem.addEventListener('mousedown', function (){ // Quand je click sur un element
             for(let elem2 of elements){
                 if(elem != elem2){
                     elem2.classList.remove("section-education-active")
 
                     elem2.children[1].innerHTML = "+";
-                    elem2.nextElementSibling.classList.add("desactive")
+                    // elem2.nextElementSibling.classList.add("desactive") // ajoute la class active a tous les elements
                 }
 
             }
